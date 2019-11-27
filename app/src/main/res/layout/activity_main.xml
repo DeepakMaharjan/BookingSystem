@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text="Booking system"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        style="@style/mystyle"
+        />
+
+    <TextView
+        android:text="Check In Date"
+        style="@style/mystyle"
+        />
+
+    <TextView
+        android:id="@+id/etCheckDate"
+        android:hint="MM/DD/YY"
+        android:inputType="date"
+        style="@style/mystyle"
+        />
+
+
+    <TextView
+        android:text="Check Out Date"
+        style="@style/mystyle"
+        />
+
+    <TextView
+        android:id="@+id/etCheckOutDate"
+        android:hint="MM/DD/YY"
+        android:inputType="date"
+        style="@style/mystyle"
+    />
+
+    <TextView
+        android:text="Select room type"
+        style="@style/mystyle"
+        />
+
+    <Spinner
+        android:id="@+id/spinRoomType"
+        style="@style/mystyle"
+        />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:rowCount="2"
+        android:columnCount="3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Adult"
+            style="@style/roomType"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Child"
+            style="@style/roomType"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Rooms"
+            style="@style/roomType"
+            />
+
+        <EditText
+            android:id="@+id/etAdultNo"
+            android:layout_width="wrap_content"
+            android:hint="0"
+            android:inputType="number"
+            style="@style/roomType"
+            />
+        <EditText
+            android:id="@+id/etChildNo"
+            android:layout_width="wrap_content"
+            android:hint="0"
+            android:inputType="number"
+            style="@style/roomType"
+            />
+        <EditText
+            android:id="@+id/etRoomNo"
+            android:layout_width="wrap_content"
+            android:hint="0"
+            android:inputType="number"
+            style="@style/roomType"
+            />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:text="Calculate"
+        style="@style/mystyle"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price"
+        android:visibility="invisible"
+        android:textSize="20sp"
+        android:id="@+id/tvPrice"/>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:hint="Result"
+        style="@style/mystyle"
+        />
+
+
+
+
+
+
+</LinearLayout>
+</ScrollView>
